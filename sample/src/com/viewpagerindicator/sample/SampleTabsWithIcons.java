@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import com.viewpagerindicator.IconPagerAdapter;
+import com.viewpagerindicator.PageIndicator;
 import com.viewpagerindicator.TabPageIndicator;
 
 public class SampleTabsWithIcons extends FragmentActivity {
@@ -28,7 +29,7 @@ public class SampleTabsWithIcons extends FragmentActivity {
         ViewPager pager = (ViewPager)findViewById(R.id.pager);
         pager.setAdapter(adapter);
 
-        TabPageIndicator indicator = (TabPageIndicator)findViewById(R.id.indicator);
+        PageIndicator indicator = (PageIndicator)findViewById(R.id.indicator);
         indicator.setViewPager(pager);
     }
 
